@@ -1,0 +1,29 @@
+--- 
+layout: post
+title: URLs ending in .html
+tags: urls,routes
+---
+This is just a personal preference of mine, but I like to have URLs end in .html. Fortunately rails makes this easy:
+
+In your routes file:
+
+<pre><code>
+map.connect ':controller/:action/:id.html', :format => 'html'
+</code></pre>
+
+For your other custom routes you will need to also add :format => 'html' and the .html at the end of the route line like above.
+
+*Update*
+
+Another (better?) way to achieve nice URLs in rails, with .html suffixes is to add the following to your ApplicationController:
+<pre><code>
+  def default_url_options(options)
+    { :format => 'html' }
+  end
+</code></pre>
+
+This means your routing line is much cleaner. In fact it's the default!
+
+<pre><code>
+  map.connect ':controller/:action/:id.:format'
+</code></pre>

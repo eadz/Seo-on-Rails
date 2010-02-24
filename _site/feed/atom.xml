@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>SEO on Rails</title>
+ <link href="http://www.seoonrails.com/atom.xml" rel="self"/>
+ <link href="http://www.seoonrails.com/"/>
+ <updated>2010-02-24T10:12:19+13:00</updated>
+ <id>http://www.seoonrails.com/</id>
+ <author>
+   <name>Eaden McKee</name>
+   <email>eadz@eadz.co.nz</email>
+ </author>
+
+ 
+ <entry>
+   <title>The SEO impact of Rails 3</title>
+   <link href="http://www.seoonrails.com/seo-impact-of-rails-3.html"/>
+   <updated>2010-02-24T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/seo-impact-of-rails-3</id>
+   <content type="html">Rails 3 is currently in beta, and I've had a look through the changes to see what impact, if any they will have on SEO. One change is that ajax helpers now work unobtrusively which will help to clean up the code, resulting in smaller page sizes. This probably won't have any effect, but it is an improvement. 
+
+The other thing is Rails 3 will be faster. Faster render times means that the google bot can index your site quicker and more often. The google bot detects load on the web server by its page render time. I wonder if it things RoR sites are always overloaded?!</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails SEO starter guide</title>
+   <link href="http://www.seoonrails.com/rails-seo-starter-guide.html"/>
+   <updated>2009-06-07T00:00:00+12:00</updated>
+   <id>http://www.seoonrails.com/rails-seo-starter-guide</id>
+   <content type="html">&lt;p&gt;Google has released their official &lt;a href=&quot;http://googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html&quot;&gt;webmaster &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; starter guide&lt;/a&gt; (download &lt;a href=&quot;http://www.google.com/webmasters/docs/search-engine-optimization-starter-guide.pdf&quot;&gt;pdf&lt;/a&gt;, which is worth a look.&lt;/p&gt;
+&lt;p&gt;Some of these reccomentations have been &amp;#8220;rails-ified&amp;#8221; and are blogged as a &lt;a href=&quot;http://www.elctech.com/articles/rails-seo-starter-guide&quot;&gt;rails seo starter guide&lt;/a&gt; There are some nice tips in the post, so check it out.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails SEO Around the web</title>
+   <link href="http://www.seoonrails.com/rails-seo-around-the-web.html"/>
+   <updated>2008-09-04T00:00:00+12:00</updated>
+   <id>http://www.seoonrails.com/rails-seo-around-the-web</id>
+   <content type="html">&lt;p&gt;While Ruby on Rails specific &lt;acronym title=&quot;Search Engine Optimization&quot;&gt;&lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt;&lt;/acronym&gt; is a pretty small subject, compared to the larger world of &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt;, it still requires some thought.&lt;/p&gt;
+&lt;p&gt;Over at &lt;a href=&quot;http://www.bingocardcreator.com/rails-seo-tips.htm&quot;&gt;http://www.bingocardcreator.com/rails-seo-tips.htm&lt;/a&gt; is a very large article on Rails-specific optimizations you can do to improve search engine rankings.&lt;/p&gt;
+&lt;p&gt;It includes:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;The Case Study: Daily Bingo Cards&lt;/li&gt;
+	&lt;li&gt;On-page Optimization&lt;/li&gt;
+	&lt;li&gt;Sexy URLs, or, Default Routes Considered Harmful&lt;/li&gt;
+	&lt;li&gt;Taming Your Title Tags (And Other Metadata)&lt;/li&gt;
+	&lt;li&gt;Don&amp;#8217;t Repeat Yourself&amp;#8230; In Your Content&lt;/li&gt;
+	&lt;li&gt;Off-page Optimization&lt;/li&gt;
+	&lt;li&gt;acts_as_linkbait: making it easy to link to you&lt;/li&gt;
+	&lt;li&gt;Bookmarks, Chicklets, and Permalinks, Oh My!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of the topics have been covered here at &lt;a href=&quot;http://www.seoonrails.com/&quot;&gt;SEOonRails.com&lt;/a&gt; but it&amp;#8217;s always nice to get another angle on it as there is always more than one way to do something when it comes to programming.&lt;/p&gt;
+&lt;p&gt;On &lt;span class=&quot;caps&quot;&gt;DZONE&lt;/span&gt; you can find a &lt;a href=&quot;http://snippets.dzone.com/posts/show/3284&quot;&gt;ruby pagerank checker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Over at &lt;a href=&quot;http://www.rubyplus.org&quot;&gt;rubyplus.org&lt;/a&gt; are 2 relevant videos. The first is a &lt;a href=&quot;http://www.bestechvideos.com/2008/07/04/ruby-plus-71-how-to-create-a-seo-sitemap-for-rails-apps&quot;&gt;video describing how to make Google Sitemaps with rails&lt;/a&gt; and also on the site is &lt;a href=&quot;http://www.rubyplus.org/episodes/26-SEO-for-Rails-app-using-Acts-as-Taggable-on-Steroids-and-Meta-Tags-Plugins.html&quot;&gt;&lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; for Rails app using Acts as Taggable on Steroids and Meta Tags Plugins&lt;/a&gt; **note a free signup is required to view videos&lt;/p&gt;
+&lt;p&gt;If you have posted about Rails+SEO or have any suggestions for this blog, please email me at questions @ this domain.com&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>SEO friendly Ajax</title>
+   <link href="http://www.seoonrails.com/seo-friendly-ajax.html"/>
+   <updated>2008-09-01T00:00:00+12:00</updated>
+   <id>http://www.seoonrails.com/seo-friendly-ajax</id>
+   <content type="html">&lt;p&gt;Ajax, one of Web2.0&amp;#8217;s core technologies, is based on Javascript which can pose a problem if you want your website to be search engine friendly. Fortunately with Ruby on Rails it&amp;#8217;s not too hard to make your Ajax &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; friendly.&lt;/p&gt;
+&lt;p&gt;I will walk you through the process of making a page with Ajax search engine friendly, using my &lt;a href=&quot;http://www.webforce.co.nz/portfolio.html&quot;&gt;web design company&amp;#8217;s portfolio page&lt;/a&gt; as an example.&lt;/p&gt;
+&lt;p&gt;The basic idea with the page is for portfolio items to display below the list using ajax, and to view on their own page if javascript is disabled.&lt;/p&gt;
+&lt;p&gt;I will walk you through how I created my &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; friendly portfolio page in 4 easy steps:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Creating the content using partials&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+	&lt;li&gt;Linking to &lt;acronym title=&quot;Remote Javascript&quot;&gt;&lt;span class=&quot;caps&quot;&gt;RJS&lt;/span&gt;&lt;/acronym&gt; files using link_to_remote in a search engine optimised way&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+	&lt;li&gt;The &lt;span class=&quot;caps&quot;&gt;RJS&lt;/span&gt; file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+	&lt;li&gt;Tracking Ajax calls with google analytics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Creating the content using partials&lt;/h4&gt;
+&lt;p&gt;For each portfolio item, I have a partial, app/view/portfolio/_portfolio.html.erb&lt;/p&gt;
+&lt;p&gt;This partial has all the information I want to display about each portfolio item, and is what will be used in the ajax calls to update the page.&lt;/p&gt;
+&lt;p&gt;The view file for a single portfolio item, only used when javascript is not available simply renders the _portfolio partial and adds a &amp;#8220;back&amp;#8221; link. The back link isn&amp;#8217;t needed for the javascript-called page so is left out of the partial.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;
+
+&amp;lt;%= render :partial =&amp;gt; 'portfolio', :locals =&amp;gt; {:portfolio =&amp;gt; @portfolio} %&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;%= link_to &quot;&amp;amp;laquo; Back to Portfolio&quot;, :action =&amp;gt; 'index' %&amp;gt;&amp;lt;/p&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;Linking to &lt;acronym title=&quot;Remote Javascript&quot;&gt;&lt;span class=&quot;caps&quot;&gt;RJS&lt;/span&gt;&lt;/acronym&gt; files using link_to_remote in a search engine optimised way&lt;/h4&gt;
+&lt;p&gt;In the index action ( app/views/portfolio/index.html.erb ) I need to link to each portfolio item.&lt;/p&gt;
+&lt;p&gt;Usually you would use link_to, but because we&amp;#8217;re doing ajax, we use &lt;a href=&quot;http://apidock.com/rails/ActionView/Helpers/PrototypeHelper/link_to_remote&quot;&gt;link_to_remote&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Usually when using link_to_remote, the link is to #, as in a href=&amp;#8220;#&amp;#8221;. But we can specify a url, and that url is used when javascript is disabled.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;
+
+&amp;lt;%= link_to_remote &quot;More Info&quot;, 
+:url =&amp;gt; {:action =&amp;gt; &quot;view&quot;, :id =&amp;gt; portfolio.id, :format =&amp;gt; 'js'}, 
+:html =&amp;gt; {:href =&amp;gt; url_for(:action =&amp;gt; &quot;view&quot;, :id =&amp;gt; portfolio.id)}%&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now the above code includes :format =&amp;gt; &amp;#8216;html&amp;#8217; and :format =&amp;gt; &amp;#8216;js&amp;#8217; because I am using &lt;a href=&quot;http://www.seoonrails.com/urls-ending-in-html&quot;&gt;urls ending in .html&lt;/a&gt;, for example, /portfolio/view/xxxx.html rather than /portfolio/view/xxxx. You can probably exclude the format parameters if you are not.&lt;/p&gt;
+&lt;p&gt;The first paramater of link_to_remote is the link text, the 2nd is the javascript url, and the 3rd is the html url as you can see in the example above.&lt;/p&gt;
+&lt;h4&gt;The &lt;span class=&quot;caps&quot;&gt;RJS&lt;/span&gt; file.&lt;/h4&gt;
+&lt;p&gt;Our controller&amp;#8217;s view action is pretty simple.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;
+
+def view
+
+  @portfolio = Portfolio.find(params[:id])
+
+   respond_to do |format|
+
+      format.html
+
+      format.js
+
+    end
+
+end
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Rails&amp;#8217;s &amp;#8220;respond_to&amp;#8221; function takes care of separating out the html and ajax requests.&lt;/p&gt;
+&lt;p&gt;The view.html.erb is already mentioned above, and just renders the _portfolio partial with an added back link.&lt;/p&gt;
+&lt;p&gt;view.rjs on the other hand contains this:&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;
+
+page.replace &quot;portfolio&quot;, :partial =&amp;gt; 'portfolio', :object =&amp;gt; @portfolio
+
+page.visual_effect :highlight, &quot;portfolio&quot;, :startcolor =&amp;gt; '#333333', :endcolor =&amp;gt; '#000000', :duration =&amp;gt; 0.5
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There is a blank div with an id of portfolio in the index page, and this gets replaced with the contents of the partial. The partial also has a div called portfolio, this way when someone clicks on another portfolio item, the old gets replaced with the new.&lt;/p&gt;
+&lt;h4&gt;Tracking Ajax calls with google analytics&lt;/h4&gt;
+&lt;p&gt;One final piece of the puzzle is tracking ajax calls with google analytics.&lt;/p&gt;
+&lt;p&gt;At the bottom of view.rjs is the line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+page &amp;lt;&amp;lt; &quot;urchinTracker('#{url_for(:id =&amp;gt; @portfolio, :action =&amp;gt; 'view')}');&quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;#8220;page &amp;lt;&amp;lt;&amp;#8221;:http://apidock.com/rails/ActionView/Helpers/PrototypeHelper/JavaScriptGenerator/GeneratorMethods/%3C%3C is the method to send raw javascript in an rjs file. The urchinTracker call tells google to track a page view, and the url given is the non-javascript url of the page.&lt;/p&gt;
+&lt;p&gt;I hope this has been a useful tutorial, any questions please post a comment.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>SEO friendly title tag plugin</title>
+   <link href="http://www.seoonrails.com/title_tag_helper.html"/>
+   <updated>2008-06-15T00:00:00+12:00</updated>
+   <id>http://www.seoonrails.com/title_tag_helper</id>
+   <content type="html">&lt;p&gt;I&amp;#8217;ve come across a small, but very useful plugin for Ruby on Rails applications. &lt;br /&gt;
+It was designed with &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; in mind, and it makes keeping your meta title tags, and your &amp;lt;h1&amp;gt; tags in sync easy.&lt;/p&gt;
+&lt;p&gt;The plugin is hosted at (the very awesome) GitHub : &lt;a href=&quot;http://github.com/DefV/title_helper/tree/master&quot;&gt;http://github.com/DefV/title_helper/tree/master&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s how it works.&lt;/p&gt;
+&lt;p&gt;In your application layout you call the plugin, passing in your overall site title.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;title&amp;gt;&amp;lt;%= title :site_name =&amp;gt; &quot;The SEO on Rails Blog&quot; %&amp;gt;&amp;lt;/title&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you do nothing else, all pages on your site will have the title &amp;#8220;Seo on Rails&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;In your view templates, say app/views/blogpost/view.html.erb you could have this:&lt;br /&gt;
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;%= title &quot;SEO plugins for Ruby on Rails&quot; %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;This will print out a H1 tag:&lt;br /&gt;
+&lt;macro:code lang=&quot;html&quot;&gt;&lt;br /&gt;
+&lt;h1&gt;&lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; plugins for Ruby on Rails&lt;/h1&gt;&lt;br /&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;br /&gt;
+At the same time, the plugin will remember the title and insert it into the layout&amp;#8217;s &amp;lt;title&amp;gt; tag before your :site_name. &lt;br /&gt;
+In our example that would result in :&lt;br /&gt;
+&lt;macro:code lang=&quot;html&quot;&gt;&lt;br /&gt;
+&lt;tiitle&gt;&lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; plugins for Ruby on Rails &amp;#8211; The &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; on Rails Blog&lt;/title&gt;&lt;br /&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;Keeping your  &amp;lt;H1&amp;gt; tags and your  &amp;lt;title&amp;gt; tags in sync is a &lt;strong&gt;good thing&lt;/strong&gt;, and this plugin helps make it very easy.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Screen scraping update ( Already! )</title>
+   <link href="http://www.seoonrails.com/scrubyt-screen-scraping.html"/>
+   <updated>2007-02-08T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/scrubyt-screen-scraping</id>
+   <content type="html">&lt;p&gt;Wow the ruby/rails community works fast. Igvita has an &lt;a href=&quot;http://www.igvita.com/blog/2007/02/04/ruby-screen-scraper-in-60-seconds/&quot;&gt;article&lt;/a&gt;  explaining how to use hpricot with the magic of firefox&amp;#8217;s firebug pluign. And &lt;a href=&quot;http://scrubyt.org/&quot;&gt;scRUBYt&lt;/a&gt; has been released, which is a billed as &lt;strong&gt;&lt;span class=&quot;caps&quot;&gt;WWW&lt;/span&gt;::Mechanize and Hpricot on Steroids&lt;/strong&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>301 Redirects in Rails</title>
+   <link href="http://www.seoonrails.com/301-redirects-in-rails.html"/>
+   <updated>2007-02-05T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/301-redirects-in-rails</id>
+   <content type="html">&lt;p&gt;A 301 redirect is a permanent redirect, which tells the search engines to index the redirected to &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt; rather than the current &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;You can use this when migrating from legacy content management systems, or to make sure that you only have 1 &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt; per page.&lt;/p&gt;
+&lt;p&gt;With the folloing code in your controller, Rails makes it easy :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+      headers[&quot;Status&quot;] = &quot;301 Moved Permanently&quot;
+      redirect_to &quot;http://someurl/&quot;
+&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>RoR image_tag harmful for SEO?</title>
+   <link href="http://www.seoonrails.com/rails-image-tag.html"/>
+   <updated>2007-02-03T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/rails-image-tag</id>
+   <content type="html">&lt;p&gt;We all know image_tag, but is it harmful for &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt;? By default, it will add an &lt;strong&gt;alt&lt;/strong&gt; tag consisting of the filename, without the extension, and capitalised.&lt;/p&gt;
+&lt;p&gt;How could this be bad? Well, the question comes down to : is an irelevent &lt;strong&gt;alt&lt;/strong&gt; tag worse than a blank one?&lt;/p&gt;
+&lt;p&gt;The code in question is one line of the image_tag method in asset_tag_helper.rb.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+  options[:alt] ||= File.basename(options[:src], '.*').split('.').first.capitalize
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To answer this question, it depends. If your image names are not related to your content then it could be.&lt;/p&gt;
+&lt;p&gt;To be safe, always pass :alt =&amp;gt; with your image_tag.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt;&lt;br /&gt;
+I asked &lt;a href=&quot;http://www.mattcutts.com/blog/&quot;&gt;Matt Cutts&lt;/a&gt; his thoughts about this and here is the reply&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you have a picture of a monkey with filename like apple.jpg or dsc00001.jpg, you shouldn&amp;#8217;t have any issues if the alt title is &amp;#8220;apple&amp;#8221; or &amp;#8220;dsc00001&amp;#8221;. However, if the image filename is cheap-viagra-debt-mortgages.jpg, then you could run into problems for sure. I&amp;#8217;d look at image filenames to make sure that they couldn&amp;#8217;t be viewed as keyword-stuffing or spammy. And it doesn&amp;#8217;t hurt to preserve the extension (.jpg) in the alt title just so that people realize that the alt title comes from the image filename.&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Getting your meta tags on track</title>
+   <link href="http://www.seoonrails.com/getting-your-meta-tags-on-track.html"/>
+   <updated>2007-02-03T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/getting-your-meta-tags-on-track</id>
+   <content type="html">&lt;p&gt;Sick of the lame Rails puns in the headlines yet? Great!&lt;/p&gt;
+&lt;p&gt;Ok, so this post is a kind of &amp;#8216;Ask the community&amp;#8217; post. How do you deal with meta tags including page titles? We should all know the ideal for titles is to be unique for each page on the site , but how do you go about this the rails way?&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s what I do (and it&amp;#8217;s just one way of many) :&lt;/p&gt;
+&lt;p&gt;In my layout/application.rhtml&lt;br /&gt;
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;title&amp;gt;&amp;lt;%= @meta_title %&amp;gt; My Site Name&amp;lt;/title&amp;gt;
+&amp;lt;meta name=&quot;keywords&quot; content=&quot;&amp;lt;%= @meta_keywords %&amp;gt;&quot; /&amp;gt;
+&amp;lt;meta name=&quot;description&quot; content=&quot;&amp;lt;%= @meta_description %&amp;gt;&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;In my application controller:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+  before_filter :meta_defaults
+  private
+
+ def meta_defaults
+    @meta_title = &quot;Welcome to&quot;
+    @meta_keywords = &quot;my keywords&quot;
+    @meta_description = &quot;my meta description&quot;
+  end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and then in individual actions in my controllers I override the defaults&lt;br /&gt;
+&lt;pre&gt;&lt;code&gt;
+def view
+    @article = Article.find(params[:id])
+    @meta_title = &quot;#{@article.name} - &quot;
+    @meta_description = @article.short_description
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve also seen suggestions for using yield and content_for, but to me that is a bit heavy-weight for simple strings.&lt;br /&gt;
+So, what do you do?&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Screen Scraping in Ruby</title>
+   <link href="http://www.seoonrails.com/screen-scraping-ruby.html"/>
+   <updated>2007-02-01T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/screen-scraping-ruby</id>
+   <content type="html">&lt;p&gt;I&amp;#8217;m not going to make a full post on this because over on Rubyrailways.com they have an &lt;a href=&quot;http://www.rubyrailways.com/data-extraction-for-web-20-screen-scraping-in-rubyrails&quot;&gt;excellent post&lt;/a&gt; covering the main libraries for screen scraping in ruby.&lt;/p&gt;
+&lt;p&gt;However it is a bit out of date being 7 months old, and since then 2 more excellent libraries have emerged.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://code.whytheluckystiff.net/hpricot/&quot;&gt;Hpricot&lt;/a&gt; from the Ruby Superstar &lt;a href=&quot;http://redhanded.hobix.com/&quot;&gt;_why&lt;/a&gt; which has just been updated to version 0.5 &lt;strong&gt;today&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;And &lt;a href=&quot;http://rubyforge.org/projects/scrapi&quot;&gt;Scrapi&lt;/a&gt; which is also excellent.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Google Sitemaps in Mephisto</title>
+   <link href="http://www.seoonrails.com/mephisto-google-sitemap.html"/>
+   <updated>2007-02-01T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/mephisto-google-sitemap</id>
+   <content type="html">&lt;p&gt;Well we call them Google Sitemaps, but &lt;span class=&quot;caps&quot;&gt;MSN&lt;/span&gt; and Yahoo are also &lt;a href=&quot;http://blogs.msdn.com/livesearch/archive/2006/11/15/microsoft-google-yahoo-unite-to-support-sitemaps.aspx&quot;&gt;on board&lt;/a&gt; and have formed &lt;a href=&quot;http://www.sitemaps.org&quot;&gt;sitemaps.org&lt;/a&gt;. So I guess we just call them &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt; sitemaps?&lt;/p&gt;
+&lt;p&gt;The 3 search engines currently don&amp;#8217;t support the full sitemaps protocol, which is shame, hopefully by later this year they will.&lt;/p&gt;
+&lt;p&gt;First off : Mephisto, the Ruby on Rails blogging software that powers this site.&lt;/p&gt;
+&lt;p&gt;Creating a sitemap is no trouble at all with the &lt;a href=&quot;http://exdolo.com/2006/9/2/mephisto-google-sitemap-plugin&quot;&gt;Mephisto sitemap plugin&lt;/a&gt;. Although to get it working on this blog, I had to change the following in &lt;br /&gt;
+ vendor/plugins/mephisto_google_sitemap/lib/mephisto_google_site_map.rb from:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+    def lastmod(article)
+      time_zone = TimeZone.new(article.site.timezone.current_period.utc_offset)
+      latest_comment = article.comments_count.zero? ? nil : article.comments.calculate(:max, :updated_at)
+      (latest_comment.nil? ? article.updated_at : latest_comment).strftime(&quot;%Y-%m-%dT%H:%M:%S#{time_zone.formatted_offset}&quot;)
+    end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+    def lastmod(article)
+      latest_comment = article.comments_count.zero? ? nil : article.comments.calculate(:max, :updated_at)
+      (latest_comment.nil? ? article.updated_at : latest_comment).strftime(&quot;%Y-%m-%dT%H:%M:%S+00:00&quot;)
+    end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Change +00:00 to what ever your timezone offset from &lt;span class=&quot;caps&quot;&gt;UTC&lt;/span&gt; is. Hopefully this will be fixed in a later version of the sitemap plugin.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>URLs ending in .html</title>
+   <link href="http://www.seoonrails.com/urls-ending-in-html.html"/>
+   <updated>2007-01-24T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/urls-ending-in-html</id>
+   <content type="html">&lt;p&gt;This is just a personal preference of mine, but I like to have URLs end in .html. Fortunately rails makes this easy:&lt;/p&gt;
+&lt;p&gt;In your routes file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+map.connect ':controller/:action/:id.html', :format =&amp;gt; 'html'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For your other custom routes you will need to also add :format =&amp;gt; &amp;#8216;html&amp;#8217; and the .html at the end of the route line like above.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Another (better?) way to achieve nice URLs in rails, with .html suffixes is to add the following to your ApplicationController:&lt;br /&gt;
+&lt;pre&gt;&lt;code&gt;
+  def default_url_options(options)
+    { :format =&amp;gt; 'html' }
+  end
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;This means your routing line is much cleaner. In fact it&amp;#8217;s the default!&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+  map.connect ':controller/:action/:id.:format'
+&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Better looking URLs with to_param</title>
+   <link href="http://www.seoonrails.com/to_param-for-better-looking-urls.html"/>
+   <updated>2007-01-24T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/to_param-for-better-looking-urls</id>
+   <content type="html">&lt;p&gt;Nice URLs aren&amp;#8217;t just for search engines, but for us mortals too. By default rails URLs look like /controller/action/1. &lt;br /&gt;
+Rails has built in support for URLs that look like /controller/action/1-my-article. This is achieved by implementing to_param in your model.&lt;/p&gt;
+&lt;p&gt;This code will turn an Article with ID 22 and title &amp;#8216;Nice URLs&amp;#8217; into 22-Nice-URLs&lt;br /&gt;
+&lt;pre&gt;&lt;code&gt;
+class Article &amp;lt; ActiveRecord::Base
+        def to_param
+          &quot;#{id}-#{title}&quot;
+        end 
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;These URLs will work automatically, providing you have the ID in the first part of the &lt;span class=&quot;caps&quot;&gt;URL&lt;/span&gt;. This works because Ruby will convert &amp;#8216;123-hello-world&amp;#8217; into 123 when to_i is called on the string :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+&amp;gt;&amp;gt; &quot;123-hello-world-1&quot;.to_i
+=&amp;gt; 123
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However you may have some funny characters in your title so you want to strip them out and convert them to hyphens. You might also want to make your urls lower case. This code does just that.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+class Article &amp;lt; ActiveRecord::Base
+        def to_param
+          &quot;#{id}-#{title.downcase.gsub(/[^[:alnum:]]/,'-')}&quot;.gsub(/-{2,}/,'-')
+        end 
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some explanation is required; .downcase converts the title to lower case, the 1st .gsub strips out anything not alphanumeric and turns it into a hyphen, and the 2nd .gsub changes any multiple hyphens into a single hyphen.&lt;/p&gt;
+&lt;p&gt;It is possible to have URLs without the ID in them, but you will have to work out what model object you need yourself in the controller. I hope to cover this in a later blog post.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Even better looking URLs with permalink_fu</title>
+   <link href="http://www.seoonrails.com/even-better-looking-urls-with-permalink_fu.html"/>
+   <updated>2007-01-24T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/even-better-looking-urls-with-permalink_fu</id>
+   <content type="html">&lt;p&gt;Extracted from &lt;a href=&quot;http://www.mephistoblog.com/&quot;&gt;Mephisto&lt;/a&gt; is the handy plugin called &lt;a href=&quot;http://svn.techno-weenie.net/projects/plugins/permalink_fu/&quot;&gt;permalink_fu&lt;/a&gt;. &lt;br /&gt;
+This plugin allows you to use ID-less permalinks, much like that in this blog.&lt;/p&gt;
+&lt;p&gt;I wrote earlier about how to use &lt;a href=&quot;http://www.seoonrails.com/to_param-for-better-looking-urls&quot;&gt;to_param&lt;/a&gt; for nicer URLs, but these are even better. The plugin automatically turns a field in your model into something that could be a permalink, by stripping out all non english and non alphanumeric letters. It then saves this in a field in your database for future use.&lt;/p&gt;
+&lt;p&gt;So, onto the HowTo:&lt;/p&gt;
+&lt;p&gt;First, install the plugin in your rails app.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+./script/plugin install http://svn.techno-weenie.net/projects/plugins/permalink_fu/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you need to add a field to your database to store the permalink.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+./script/generate migration add_permalink_to_article
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the migration we add the field called permalink.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+add_column :designers, :permalink, :string
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now for the model code&lt;br /&gt;
+&lt;pre&gt;&lt;code&gt;
+class Article &amp;lt; ActiveRecord::Base&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;title is the field name you want to convert to a permalink&lt;br /&gt;
+        has_permalink :title&lt;/li&gt;
+	&lt;li&gt;you can also specifiy a different permalink field in your database by giving a second paramater&lt;/li&gt;
+	&lt;li&gt;has_permalink :title, :my_permalink_field&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol&gt;
+	&lt;li&gt;we now add the to_param method which Rails&amp;#8217;s routing uses&lt;br /&gt;
+        def to_param&lt;br /&gt;
+              permalink&lt;br /&gt;
+        end         &lt;br /&gt;
+end&lt;br /&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The permalink field is only populated after the record is validated, so if you have a bunch of records already in your database you can get the permalink field to populate with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+Article.find(:all).each(&amp;amp;:save)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you already have lots of view code written then this is the easy way to get these routes working &amp;#8211; in your controller :&lt;br /&gt;
+&lt;pre&gt;&lt;code&gt;
+@article = Article.find_by_permalink(params[:id])
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;However that doesn&amp;#8217;t seem to pass the smell test using :id rather than :permalink, but will work fine. &lt;br /&gt;
+To use :permalink you will have to change your routing code and your view code :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+# in your route file
+map.connect 'article/:permalink', :controller =&amp;gt; 'article', :action =&amp;gt; 'view'
+# in your views when linking
+link_to &quot;View #{article.title}&quot;, {:controller =&amp;gt; 'designer', :action =&amp;gt; 'view', :permalink =&amp;gt; article.permalink}
+# then in your controller you can use
+@article = Article.find_by_permalink(params[:permalink])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Thats all! I&amp;#8217;m always on the lookout for &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; related Rails topics to talk about so drop me a line @ questions &lt;del&gt;at&lt;/del&gt; this domain .com.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome to SEO on Rails</title>
+   <link href="http://www.seoonrails.com/welcome-to-seo-on-rails.html"/>
+   <updated>2007-01-23T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/welcome-to-seo-on-rails</id>
+   <content type="html">&lt;p&gt;First Post!&lt;/p&gt;
+&lt;p&gt;Welcome to &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; on Rails. I hope to bring you lots of tips, code and ideas to help your Ruby on Rails powered site more search engine friendly and optimized.&lt;/p&gt;
+&lt;p&gt;If you have any rails related &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; questions, please email me &amp;#8211; questions @ this domain.&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>

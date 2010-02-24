@@ -1,0 +1,44 @@
+--- 
+layout: post
+title: Getting your meta tags on track
+tags: rails,meta tags
+---
+Sick of the lame Rails puns in the headlines yet? Great! 
+
+Ok, so this post is a kind of 'Ask the community' post. How do you deal with meta tags including page titles? We should all know the ideal for titles is to be unique for each page on the site , but how do you go about this the rails way?
+
+Here's what I do (and it's just one way of many) :
+
+In my layout/application.rhtml
+<pre><code>
+<title><%= @meta_title %> My Site Name</title>
+<meta name="keywords" content="<%= @meta_keywords %>" />
+<meta name="description" content="<%= @meta_description %>" />
+</code></pre>
+
+In my application controller:
+
+<pre><code>
+  before_filter :meta_defaults
+  private
+
+ def meta_defaults
+    @meta_title = "Welcome to"
+    @meta_keywords = "my keywords"
+    @meta_description = "my meta description"
+  end
+</code></pre>
+
+and then in individual actions in my controllers I override the defaults
+<pre><code>
+def view
+    @article = Article.find(params[:id])
+    @meta_title = "#{@article.name} - "
+    @meta_description = @article.short_description
+end
+</code></pre>
+
+I've also seen suggestions for using yield and content_for, but to me that is a bit heavy-weight for simple strings.
+So, what do you do?
+
+

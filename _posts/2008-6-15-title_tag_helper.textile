@@ -1,0 +1,36 @@
+--- 
+layout: post
+title: SEO friendly title tag plugin
+tags: plugins,seo,views,SEO
+---
+I've come across a small, but very useful plugin for Ruby on Rails applications. 
+It was designed with SEO in mind, and it makes keeping your meta title tags, and your &lt;h1> tags in sync easy. 
+
+The plugin is hosted at (the very awesome) GitHub : "http://github.com/DefV/title_helper/tree/master":http://github.com/DefV/title_helper/tree/master
+
+Here's how it works.
+
+In your application layout you call the plugin, passing in your overall site title. 
+
+<pre><code>
+<title><%= title :site_name => "The SEO on Rails Blog" %></title>
+</code></pre>
+
+If you do nothing else, all pages on your site will have the title "Seo on Rails". 
+
+In your view templates, say app/views/blogpost/view.html.erb you could have this:
+<pre><code>
+<%= title "SEO plugins for Ruby on Rails" %>
+</code></pre>
+
+This will print out a H1 tag:
+<macro:code lang="html">
+<h1>SEO plugins for Ruby on Rails</h1>
+</code></pre>
+At the same time, the plugin will remember the title and insert it into the layout's &lt;title> tag before your :site_name. 
+In our example that would result in :
+<macro:code lang="html">
+<tiitle>SEO plugins for Ruby on Rails - The SEO on Rails Blog</title>
+</code></pre>
+
+Keeping your  &lt;H1> tags and your  &lt;title> tags in sync is a *good thing*, and this plugin helps make it very easy. 

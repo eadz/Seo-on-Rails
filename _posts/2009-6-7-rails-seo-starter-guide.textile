@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: Rails SEO starter guide
+tags: rails,seo,google,SEO
+---
+Google has released their official "webmaster SEO starter guide":http://googlewebmastercentral.blogspot.com/2008/11/googles-seo-starter-guide.html (download "pdf":http://www.google.com/webmasters/docs/search-engine-optimization-starter-guide.pdf, which is worth a look. 
+
+Some of these reccomentations have been "rails-ified" and are blogged as a "rails seo starter guide":http://www.elctech.com/articles/rails-seo-starter-guide There are some nice tips in the post, so check it out. 
+
+
+

@@ -1,0 +1,38 @@
+--- 
+layout: post
+title: Better looking URLs with to_param
+tags: urls,rails,routes
+---
+Nice URLs aren't just for search engines, but for us mortals too. By default rails URLs look like /controller/action/1. 
+Rails has built in support for URLs that look like /controller/action/1-my-article. This is achieved by implementing to_param in your model. 
+
+This code will turn an Article with ID 22 and title 'Nice URLs' into 22-Nice-URLs
+<pre><code>
+class Article < ActiveRecord::Base
+        def to_param
+          "#{id}-#{title}"
+        end 
+end
+</code></pre>
+
+
+These URLs will work automatically, providing you have the ID in the first part of the URL. This works because Ruby will convert '123-hello-world' into 123 when to_i is called on the string :
+
+<pre><code>
+>> "123-hello-world-1".to_i
+=> 123
+</code></pre>
+
+However you may have some funny characters in your title so you want to strip them out and convert them to hyphens. You might also want to make your urls lower case. This code does just that. 
+
+<pre><code>
+class Article < ActiveRecord::Base
+        def to_param
+          "#{id}-#{title.downcase.gsub(/[^[:alnum:]]/,'-')}".gsub(/-{2,}/,'-')
+        end 
+end
+</code></pre>
+
+Some explanation is required; .downcase converts the title to lower case, the 1st .gsub strips out anything not alphanumeric and turns it into a hyphen, and the 2nd .gsub changes any multiple hyphens into a single hyphen.
+
+It is possible to have URLs without the ID in them, but you will have to work out what model object you need yourself in the controller. I hope to cover this in a later blog post. 

@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: Welcome to SEO on Rails
+---
+First Post!
+
+Welcome to SEO on Rails. I hope to bring you lots of tips, code and ideas to help your Ruby on Rails powered site more search engine friendly and optimized. 
+
+If you have any rails related SEO questions, please email me - questions @ this domain. 

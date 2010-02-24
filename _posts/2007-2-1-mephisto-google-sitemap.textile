@@ -1,0 +1,32 @@
+--- 
+layout: post
+title: Google Sitemaps in Mephisto
+tags: sitemaps,xml,mephisto
+---
+Well we call them Google Sitemaps, but MSN and Yahoo are also "on board":http://blogs.msdn.com/livesearch/archive/2006/11/15/microsoft-google-yahoo-unite-to-support-sitemaps.aspx and have formed "sitemaps.org":http://www.sitemaps.org. So I guess we just call them XML sitemaps?
+
+The 3 search engines currently don't support the full sitemaps protocol, which is shame, hopefully by later this year they will.
+
+First off : Mephisto, the Ruby on Rails blogging software that powers this site. 
+
+Creating a sitemap is no trouble at all with the "Mephisto sitemap plugin":http://exdolo.com/2006/9/2/mephisto-google-sitemap-plugin. Although to get it working on this blog, I had to change the following in 
+ vendor/plugins/mephisto_google_sitemap/lib/mephisto_google_site_map.rb from:
+
+<pre><code>
+    def lastmod(article)
+      time_zone = TimeZone.new(article.site.timezone.current_period.utc_offset)
+      latest_comment = article.comments_count.zero? ? nil : article.comments.calculate(:max, :updated_at)
+      (latest_comment.nil? ? article.updated_at : latest_comment).strftime("%Y-%m-%dT%H:%M:%S#{time_zone.formatted_offset}")
+    end
+</code></pre>
+
+to:
+
+<pre><code>
+    def lastmod(article)
+      latest_comment = article.comments_count.zero? ? nil : article.comments.calculate(:max, :updated_at)
+      (latest_comment.nil? ? article.updated_at : latest_comment).strftime("%Y-%m-%dT%H:%M:%S+00:00")
+    end
+</code></pre>
+
+Change +00:00 to what ever your timezone offset from UTC is. Hopefully this will be fixed in a later version of the sitemap plugin.

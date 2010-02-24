@@ -1,0 +1,24 @@
+--- 
+layout: post
+title: RoR image_tag harmful for SEO?
+tags: image,alt,seo,google
+---
+We all know image_tag, but is it harmful for SEO? By default, it will add an *alt* tag consisting of the filename, without the extension, and capitalised.
+
+How could this be bad? Well, the question comes down to : is an irelevent *alt* tag worse than a blank one?
+
+The code in question is one line of the image_tag method in asset_tag_helper.rb.
+
+<pre><code>
+  options[:alt] ||= File.basename(options[:src], '.*').split('.').first.capitalize
+</code></pre>
+
+To answer this question, it depends. If your image names are not related to your content then it could be. 
+
+To be safe, always pass :alt => with your image_tag.
+
+*Update:*
+I asked "Matt Cutts":http://www.mattcutts.com/blog/ his thoughts about this and here is the reply 
+
+bq. If you have a picture of a monkey with filename like apple.jpg or dsc00001.jpg, you shouldn't have any issues if the alt title is "apple" or "dsc00001". However, if the image filename is cheap-viagra-debt-mortgages.jpg, then you could run into problems for sure. I'd look at image filenames to make sure that they couldn't be viewed as keyword-stuffing or spammy. And it doesn't hurt to preserve the extension (.jpg) in the alt title just so that people realize that the alt title comes from the image filename.
+

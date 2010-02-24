@@ -1,0 +1,63 @@
+---
+layout: default
+title: SEO on Rails
+---
+
+  {% for post in site.posts limit:10 %}
+ <div class="postWrapper">
+
+
+
+     
+  <div class="postmetadata">
+          <p class="meta-date">
+	    <span class="date-day">{{ post.date | date: "%d"}}</span>
+              <span class="date-month">{{post.date| date: "%b"}}</span>
+
+		<span class="date-year">{{post.date|date: "%Y"}}</span>
+          </p>
+          <p class="meta-author">by Eaden McKee</p>
+      <!--    <a href="link to comments" class="meta-comments"  title=""></a> -->
+                          
+               
+          <p class="meta-tags">
+           {{post.tags }}	</div>
+
+<div class="post" id="post-3">
+	<h1><a href="{{ post.url }}" rel="bookmark" >{{ post.title }}</a></h1>
+
+	<div class="entry">
+	  
+	  {{ post.content }}
+		<!-- <div id="attachment_138" class="wp-caption aligncenter" style="width: 480px"><img src="http://web-kreation.com/demos/oneroom/wp-content/uploads/2009/02/nature-1.jpg" alt="Lorem ipsum dolor sit amet" title="nature-1" width="470" height="180" class="size-full wp-image-138" /><p class="wp-caption-text">Lorem ipsum dolor sit amet</p></div>
+<h2>About this Theme</h2>
+<p><a href="http://web-kreation.com/index.php/wordpress/oneroom-another-free-wordpress-theme-by-web-kreation" title="Go back to the article"><strong>OneRoom</strong></a> is a free Wordpress theme designed by <a href="http://web-kreation.com">Web-Kreation</a> whose blog you will find at <a href="http://web-kreation.com/index.php/blog/">http://web-kreation.com/index.php/blog/</a>. This theme is valid <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fweb-kreation.com%2Fdemos%2Foneroom&#038;charset=(detect+automatically)&#038;doctype=Inline&#038;group=0" target="_blank" rel="nofollow">(X)HTML</a> &#038; <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fweb-kreation.com%2Fdemos%2Foneroom&#038;profile=css21&#038;usermedium=all&#038;warning=1&#038;lang=es" target="_blank" rel="nofollow">CSS</a>.</p> -->
+
+
+
+
+	</div>
+      </div>
+  </div>
+
+  {% endfor %}
+
+  <div class="postWrapper">
+
+
+    <div class="post">
+    	<h1>Older Posts</h1>
+
+    	<div class="entry">
+
+
+      <ul>
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+  </div>
+  
+  </div>
+  </div>

@@ -1,0 +1,17 @@
+RewriteEngine on
+
+RewriteRule 	welcome-to-seo-on-rails$ 		http://www.seoonrails.com/welcome-to-seo-on-rails.html  [L,R=301]
+RewriteRule 	even-better-looking-urls-with-permalink_fu$ 		http://www.seoonrails.com/even-better-looking-urls-with-permalink_fu.html  [L,R=301]
+RewriteRule 	to_param-for-better-looking-urls$ 		http://www.seoonrails.com/to_param-for-better-looking-urls.html  [L,R=301]
+RewriteRule 	urls-ending-in-html$ 		http://www.seoonrails.com/urls-ending-in-html.html  [L,R=301]
+RewriteRule 	mephisto-google-sitemap$ 		http://www.seoonrails.com/mephisto-google-sitemap.html  [L,R=301]
+RewriteRule 	screen-scraping-ruby$ 		http://www.seoonrails.com/screen-scraping-ruby.html  [L,R=301]
+RewriteRule 	getting-your-meta-tags-on-track$ 		http://www.seoonrails.com/getting-your-meta-tags-on-track.html  [L,R=301]
+RewriteRule 	rails-image-tag$ 		http://www.seoonrails.com/rails-image-tag.html  [L,R=301]
+RewriteRule 	301-redirects-in-rails$ 		http://www.seoonrails.com/301-redirects-in-rails.html  [L,R=301]
+RewriteRule 	scrubyt-screen-scraping$ 		http://www.seoonrails.com/scrubyt-screen-scraping.html  [L,R=301]
+RewriteRule 	title_tag_helper$ 		http://www.seoonrails.com/title_tag_helper.html  [L,R=301]
+RewriteRule 	seo-friendly-ajax$ 		http://www.seoonrails.com/seo-friendly-ajax.html  [L,R=301]
+RewriteRule 	rails-seo-around-the-web$ 		http://www.seoonrails.com/rails-seo-around-the-web.html  [L,R=301]
+RewriteRule 	rails-seo-starter-guide$ 		http://www.seoonrails.com/rails-seo-starter-guide.html  [L,R=301]
+RewriteRule 	seo-impact-of-rails-3$ 		http://www.seoonrails.com/seo-impact-of-rails-3.html  [L,R=301]

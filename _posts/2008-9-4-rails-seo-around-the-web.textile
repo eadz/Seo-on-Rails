@@ -1,0 +1,26 @@
+--- 
+layout: post
+title: Rails SEO Around the web
+tags: rails,seo,SEO,links
+---
+While Ruby on Rails specific SEO(Search Engine Optimization) is a pretty small subject, compared to the larger world of SEO, it still requires some thought. 
+
+Over at "http://www.bingocardcreator.com/rails-seo-tips.htm":http://www.bingocardcreator.com/rails-seo-tips.htm is a very large article on Rails-specific optimizations you can do to improve search engine rankings. 
+
+It includes:
+* The Case Study: Daily Bingo Cards
+* On-page Optimization
+* Sexy URLs, or, Default Routes Considered Harmful
+* Taming Your Title Tags (And Other Metadata)
+* Don't Repeat Yourself... In Your Content
+* Off-page Optimization
+* acts_as_linkbait: making it easy to link to you
+* Bookmarks, Chicklets, and Permalinks, Oh My!
+
+Some of the topics have been covered here at "SEOonRails.com":http://www.seoonrails.com/ but it's always nice to get another angle on it as there is always more than one way to do something when it comes to programming. 
+
+On DZONE you can find a "ruby pagerank checker":http://snippets.dzone.com/posts/show/3284 
+
+Over at "rubyplus.org":http://www.rubyplus.org are 2 relevant videos. The first is a "video describing how to make Google Sitemaps with rails":http://www.bestechvideos.com/2008/07/04/ruby-plus-71-how-to-create-a-seo-sitemap-for-rails-apps and also on the site is "SEO for Rails app using Acts as Taggable on Steroids and Meta Tags Plugins":http://www.rubyplus.org/episodes/26-SEO-for-Rails-app-using-Acts-as-Taggable-on-Steroids-and-Meta-Tags-Plugins.html **note a free signup is required to view videos
+
+If you have posted about Rails+SEO or have any suggestions for this blog, please email me at questions @ this domain.com

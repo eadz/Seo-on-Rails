@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Screen Scraping in Ruby
+tags: ruby,screen scraping
+---
+I'm not going to make a full post on this because over on Rubyrailways.com they have an "excellent post":http://www.rubyrailways.com/data-extraction-for-web-20-screen-scraping-in-rubyrails covering the main libraries for screen scraping in ruby.
+
+However it is a bit out of date being 7 months old, and since then 2 more excellent libraries have emerged. 
+
+"Hpricot":http://code.whytheluckystiff.net/hpricot/ from the Ruby Superstar "_why":http://redhanded.hobix.com/ which has just been updated to version 0.5 *today*!
+
+And "Scrapi":http://rubyforge.org/projects/scrapi which is also excellent. 

@@ -1,0 +1,70 @@
+--- 
+layout: post
+title: Even better looking URLs with permalink_fu
+tags: urls,rails,routes,permalinks,plugins
+---
+Extracted from "Mephisto":http://www.mephistoblog.com/ is the handy plugin called "permalink_fu":http://svn.techno-weenie.net/projects/plugins/permalink_fu/. 
+This plugin allows you to use ID-less permalinks, much like that in this blog. 
+
+I wrote earlier about how to use "to_param":http://www.seoonrails.com/to_param-for-better-looking-urls for nicer URLs, but these are even better. The plugin automatically turns a field in your model into something that could be a permalink, by stripping out all non english and non alphanumeric letters. It then saves this in a field in your database for future use. 
+
+So, onto the HowTo:
+
+
+First, install the plugin in your rails app.
+
+<pre><code>
+./script/plugin install http://svn.techno-weenie.net/projects/plugins/permalink_fu/
+</code></pre>
+
+Now you need to add a field to your database to store the permalink. 
+
+<pre><code>
+./script/generate migration add_permalink_to_article
+</code></pre>
+
+In the migration we add the field called permalink.
+
+<pre><code>
+add_column :designers, :permalink, :string
+</code></pre>
+
+Now for the model code
+<pre><code>
+class Article < ActiveRecord::Base
+        # title is the field name you want to convert to a permalink
+        has_permalink :title 
+        # you can also specifiy a different permalink field in your database by giving a second paramater
+        # has_permalink :title, :my_permalink_field
+       
+        # we now add the to_param method which Rails's routing uses
+        def to_param
+              permalink
+        end         
+end
+</code></pre>
+
+The permalink field is only populated after the record is validated, so if you have a bunch of records already in your database you can get the permalink field to populate with 
+
+<pre><code>
+Article.find(:all).each(&:save)
+</code></pre>
+
+If you already have lots of view code written then this is the easy way to get these routes working - in your controller :
+<pre><code>
+@article = Article.find_by_permalink(params[:id])
+</code></pre>
+
+However that doesn't seem to pass the smell test using :id rather than :permalink, but will work fine. 
+To use :permalink you will have to change your routing code and your view code :
+
+<pre><code>
+# in your route file
+map.connect 'article/:permalink', :controller => 'article', :action => 'view'
+# in your views when linking
+link_to "View #{article.title}", {:controller => 'designer', :action => 'view', :permalink => article.permalink}
+# then in your controller you can use
+@article = Article.find_by_permalink(params[:permalink])
+</code></pre>
+
+Thats all! I'm always on the lookout for SEO related Rails topics to talk about so drop me a line @ questions -at- this domain .com. 

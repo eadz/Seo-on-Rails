@@ -1,0 +1,8 @@
+---
+layout: none
+---
+http://www.seoonrails.com/
+http://www.eadz.co.nz/archives.html
+http://www.eadz.co.nz/atom.xml
+{% for post in site.posts %}http://www.eadz.co.nz{{ post.url }}
+{% endfor %}

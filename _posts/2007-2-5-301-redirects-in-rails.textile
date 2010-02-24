@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: 301 Redirects in Rails
+tags: urls,301 redirect
+---
+A 301 redirect is a permanent redirect, which tells the search engines to index the redirected to URL rather than the current URL. 
+
+You can use this when migrating from legacy content management systems, or to make sure that you only have 1 URL per page.
+
+With the folloing code in your controller, Rails makes it easy :
+
+<pre><code>
+      headers["Status"] = "301 Moved Permanently"
+      redirect_to "http://someurl/"
+</code></pre>

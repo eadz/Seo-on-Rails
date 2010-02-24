@@ -1,0 +1,160 @@
+--- 
+layout: post
+title: SEO friendly Ajax
+tags: seo,SEO,ajax,rjs,analytics
+---
+Ajax, one of Web2.0's core technologies, is based on Javascript which can pose a problem if you want your website to be search engine friendly. Fortunately with Ruby on Rails it's not too hard to make your Ajax SEO friendly. 
+
+
+
+I will walk you through the process of making a page with Ajax search engine friendly, using my "web design company's portfolio page":http://www.webforce.co.nz/portfolio.html as an example. 
+
+
+
+The basic idea with the page is for portfolio items to display below the list using ajax, and to view on their own page if javascript is disabled. 
+
+
+
+I will walk you through how I created my SEO friendly portfolio page in 4 easy steps:
+
+
+
+* Creating the content using partials
+
+* Linking to RJS(Remote Javascript) files using link_to_remote in a search engine optimised way
+
+* The RJS file
+
+* Tracking Ajax calls with google analytics
+
+
+
+h4. Creating the content using partials
+
+
+
+For each portfolio item, I have a partial, app/view/portfolio/_portfolio.html.erb
+
+This partial has all the information I want to display about each portfolio item, and is what will be used in the ajax calls to update the page. 
+
+
+
+The view file for a single portfolio item, only used when javascript is not available simply renders the _portfolio partial and adds a "back" link. The back link isn't needed for the javascript-called page so is left out of the partial. 
+
+
+
+<pre><code>
+
+<%= render :partial => 'portfolio', :locals => {:portfolio => @portfolio} %>
+
+<p><%= link_to "&laquo; Back to Portfolio", :action => 'index' %></p>
+
+</code></pre>
+
+
+
+h4. Linking to RJS(Remote Javascript) files using link_to_remote in a search engine optimised way
+
+
+
+In the index action ( app/views/portfolio/index.html.erb ) I need to link to each portfolio item. 
+
+Usually you would use link_to, but because we're doing ajax, we use "link_to_remote":http://apidock.com/rails/ActionView/Helpers/PrototypeHelper/link_to_remote
+
+
+
+Usually when using link_to_remote, the link is to #, as in a href="#". But we can specify a url, and that url is used when javascript is disabled. 
+
+
+
+<pre><code>
+
+<%= link_to_remote "More Info", 
+:url => {:action => "view", :id => portfolio.id, :format => 'js'}, 
+:html => {:href => url_for(:action => "view", :id => portfolio.id)}%>
+
+</code></pre>
+
+
+
+Now the above code includes :format => 'html' and :format => 'js' because I am using "urls ending in .html":http://www.seoonrails.com/urls-ending-in-html, for example, /portfolio/view/xxxx.html rather than /portfolio/view/xxxx. You can probably exclude the format parameters if you are not. 
+
+
+
+The first paramater of link_to_remote is the link text, the 2nd is the javascript url, and the 3rd is the html url as you can see in the example above. 
+
+
+
+h4. The RJS file. 
+
+
+
+Our controller's view action is pretty simple. 
+
+
+
+<pre><code>
+
+def view
+
+  @portfolio = Portfolio.find(params[:id])
+
+   respond_to do |format|
+
+      format.html
+
+      format.js
+
+    end
+
+end
+
+</code></pre>
+
+
+
+Rails's "respond_to" function takes care of separating out the html and ajax requests. 
+
+
+
+The view.html.erb is already mentioned above, and just renders the _portfolio partial with an added back link. 
+
+view.rjs on the other hand contains this:
+
+
+
+<pre><code>
+
+page.replace "portfolio", :partial => 'portfolio', :object => @portfolio
+
+page.visual_effect :highlight, "portfolio", :startcolor => '#333333', :endcolor => '#000000', :duration => 0.5
+
+</code></pre>
+
+
+
+There is a blank div with an id of portfolio in the index page, and this gets replaced with the contents of the partial. The partial also has a div called portfolio, this way when someone clicks on another portfolio item, the old gets replaced with the new. 
+
+
+
+h4. Tracking Ajax calls with google analytics
+
+
+
+One final piece of the puzzle is tracking ajax calls with google analytics. 
+
+At the bottom of view.rjs is the line
+
+<pre><code>
+
+page << "urchinTracker('#{url_for(:id => @portfolio, :action => 'view')}');"
+
+</code></pre>
+
+
+
+"page <<":http://apidock.com/rails/ActionView/Helpers/PrototypeHelper/JavaScriptGenerator/GeneratorMethods/%3C%3C is the method to send raw javascript in an rjs file. The urchinTracker call tells google to track a page view, and the url given is the non-javascript url of the page. 
+
+
+
+I hope this has been a useful tutorial, any questions please post a comment. 
