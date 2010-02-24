@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: Vanity for AB testing
+tags: rails,seo,testing
+---
+
+I've recently come across "Vanity":http://vanity.labnotes.org/ an A/B testing plugin/framework for rails. It looks great and I'm keen to give it a try on my next project. 
+
+Also, I've switched this blog from Mephisto to jekyll. For a content management system,  "Jekyll":http://wiki.github.com/mojombo/jekyll/ makes it very easy to make SEO friendly sites. Of course it's not your normal CMS as it is a static site generator, but it does help you manage your content just like a CMS. 

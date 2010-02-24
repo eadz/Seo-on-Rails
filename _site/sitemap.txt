@@ -1,6 +1,7 @@
 http://www.seoonrails.com/
 http://www.eadz.co.nz/archives.html
 http://www.eadz.co.nz/atom.xml
+http://www.eadz.co.nz/vanity-for-ab-tests.html
 http://www.eadz.co.nz/seo-impact-of-rails-3.html
 http://www.eadz.co.nz/rails-seo-starter-guide.html
 http://www.eadz.co.nz/rails-seo-around-the-web.html

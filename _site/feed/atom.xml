@@ -4,7 +4,7 @@
  <title>SEO on Rails</title>
  <link href="http://www.seoonrails.com/atom.xml" rel="self"/>
  <link href="http://www.seoonrails.com/"/>
- <updated>2010-02-24T10:12:19+13:00</updated>
+ <updated>2010-02-24T14:14:13+13:00</updated>
  <id>http://www.seoonrails.com/</id>
  <author>
    <name>Eaden McKee</name>
@@ -13,13 +13,21 @@
 
  
  <entry>
+   <title>Vanity for AB testing</title>
+   <link href="http://www.seoonrails.com/vanity-for-ab-tests.html"/>
+   <updated>2010-02-24T00:00:00+13:00</updated>
+   <id>http://www.seoonrails.com/vanity-for-ab-tests</id>
+   <content type="html">&lt;p&gt;I&amp;#8217;ve recently come across &lt;a href=&quot;http://vanity.labnotes.org/&quot;&gt;Vanity&lt;/a&gt; an A/B testing plugin/framework for rails. It looks great and I&amp;#8217;m keen to give it a try on my next project.&lt;/p&gt;
+&lt;p&gt;Also, I&amp;#8217;ve switched this blog from Mephisto to jekyll. For a content management system,  &lt;a href=&quot;http://wiki.github.com/mojombo/jekyll/&quot;&gt;Jekyll&lt;/a&gt; makes it very easy to make &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; friendly sites. Of course it&amp;#8217;s not your normal &lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt; as it is a static site generator, but it does help you manage your content just like a &lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>The SEO impact of Rails 3</title>
    <link href="http://www.seoonrails.com/seo-impact-of-rails-3.html"/>
    <updated>2010-02-24T00:00:00+13:00</updated>
    <id>http://www.seoonrails.com/seo-impact-of-rails-3</id>
-   <content type="html">Rails 3 is currently in beta, and I've had a look through the changes to see what impact, if any they will have on SEO. One change is that ajax helpers now work unobtrusively which will help to clean up the code, resulting in smaller page sizes. This probably won't have any effect, but it is an improvement. 
-
-The other thing is Rails 3 will be faster. Faster render times means that the google bot can index your site quicker and more often. The google bot detects load on the web server by its page render time. I wonder if it things RoR sites are always overloaded?!</content>
+   <content type="html">&lt;p&gt;Rails 3 is currently in beta, and I&amp;#8217;ve had a look through the changes to see what impact, if any they will have on &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt;. One change is that ajax helpers now work unobtrusively which will help to clean up the code, resulting in smaller page sizes. This probably won&amp;#8217;t have any effect, but it is an improvement.&lt;/p&gt;
+&lt;p&gt;The other thing is Rails 3 will be faster. Faster render times means that the google bot can index your site quicker and more often. The google bot detects load on the web server by its page render time. I wonder if it things RoR sites are always overloaded?!&lt;/p&gt;</content>
  </entry>
  
  <entry>
